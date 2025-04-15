@@ -1,9 +1,4 @@
-import {
-  HashRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useState } from 'react';
 import MealDetails from './components/MealDetails';
 import RandomRecipe from './components/RandomRecipe';
@@ -32,9 +27,10 @@ function App() {
 
   return (
     <div>
-      <Router basename="/recipe-react">
+      {/* basename="/recipe-react" */}
+      <HashRouter>
         <Routes>
-          <Route path="/" element={<Navigate to="search/area" replace />} />
+          <Route path="/" element={<Navigate to="/search/area" replace />} />
           <Route
             path="/search/meal"
             element={
@@ -87,7 +83,7 @@ function App() {
           />
           <Route path="lists" element={<MealLists />} />
         </Routes>
-      </Router>
+      </HashRouter>
       {/* <DarkModeProvider> */}
 
       {/* </DarkModeProvider> */}
