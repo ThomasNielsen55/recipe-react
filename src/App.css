@@ -109,9 +109,9 @@
   /*Allows the columns to wrap if necessary */
 }
 
-/* .ingredients-container h3 {
+.ingredients-container h3 {
   margin-right: 100px;
-} */
+}
 
 .bottom-links-container {
   margin-bottom: 20px; /* Adjust this value for space from the bottom */
