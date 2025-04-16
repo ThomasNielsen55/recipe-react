@@ -100,15 +100,18 @@
 
 .ingredients-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center; /* Centers the content horizontally */
   max-width: 600px; /* Adjust width as needed */
   margin: 0 auto; /* Centers the container horizontally */
-  flex-wrap: wrap; /* Allows the columns to wrap if necessary */
+  /* flex-wrap: wrap;  */
+  /*Allows the columns to wrap if necessary */
 }
 
-.ingredients-container h3 {
+/* .ingredients-container h3 {
   margin-right: 100px;
-}
+} */
 
 .bottom-links-container {
   margin-bottom: 20px; /* Adjust this value for space from the bottom */
