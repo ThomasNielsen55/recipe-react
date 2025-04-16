@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -33,7 +33,7 @@ function App() {
   return (
     <div>
       {/* basename="/recipe-react" */}
-      <Router basename="/recipe-react">
+      <Router>
         <Routes>
           <Route path="/" element={<Navigate to="/search/area" replace />} />
           <Route
